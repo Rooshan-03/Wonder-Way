@@ -6,7 +6,10 @@ import { View } from 'react-native';
 export default function Layout() {
   return (
     <View className="flex-1 bg-white">
-      <Stack />
+      <Stack screenOptions={{
+        headerShown:false,
+        animation:'fade'
+      }} />
     </View>
   );
 }
